@@ -1,0 +1,39 @@
+/* NavBar.css - Estilos base */
+.navbar {
+  background-color: #007bff; /* Color principal del navbar */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos del navbar */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  transition: background-color 0.3s ease; /* Animación de cambio de color */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease; /* Animación de cambio de color al pasar el mouse */
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  background-color: #0056e0; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Cambia la dirección a vertical */
+    align-items: center; /* Alinea los elementos al centro */
+  }
+
+  .navbar a {
+    padding: 0.5rem; /* Ajusta el padding para enlaces en móviles */
+    margin: 5px 0; /* Agrega un margen entre enlaces */
+    width: 100%; /* Los enlaces ocupan todo el ancho */
+    text-align: center; /* Centra el texto de los enlaces */
+  }
+}

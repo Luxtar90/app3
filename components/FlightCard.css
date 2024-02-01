@@ -1,0 +1,69 @@
+/* FlightCard.css - Estilos base */
+.flight-card {
+    border: 1px solid #b6e0fe;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f2f9fe;
+    box-shadow: 0 4px 8px rgba(0, 105, 217, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .flight-info h3 {
+    color: #007aff;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .flight-info p {
+    color: #5d5d5d;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 5px 0;
+  }
+  
+  .select-flight {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 10px;
+  }
+  
+  .select-flight:hover {
+    background-color: #0056e0;
+  }
+  
+  /* Estilo adicional para mejor espaciado y presentación */
+  .flight-card > *:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos responsivos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .flight-card {
+      padding: 15px;
+    }
+  
+    .flight-info h3 {
+      font-size: 18px;
+    }
+  
+    .flight-info p {
+      font-size: 14px;
+    }
+  
+    .select-flight {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+

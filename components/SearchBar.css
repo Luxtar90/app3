@@ -1,0 +1,42 @@
+/* SearchBar.css - Estilos base */
+.search-bar {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="date"] {
+  padding: 10px;
+  margin: 0 10px;
+  border: 1px solid #b6e0fe;
+  border-radius: 4px;
+  outline: none;
+  flex-grow: 1; /* Permite que los campos de texto crezcan con la pantalla */
+}
+
+.search-bar button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap; /* Evita que el texto del botón se envuelva */
+}
+
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 600px) {
+  .search-bar input[type="text"],
+  .search-bar input[type="date"],
+  .search-bar button {
+    margin: 10px 0; /* Aumenta el margen para mejor legibilidad */
+    width: 90%; /* Ajusta el ancho para pequeñas pantallas */
+  }
+}

@@ -1,0 +1,42 @@
+/* FlightOffers.css - Estilos base */
+.flight-offers {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #f2f9fe;
+}
+
+.flight-offers .offer {
+  border: 1px solid #b6e0fe;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1);
+}
+
+.offer h3 {
+  color: #007aff;
+  margin-bottom: 5px;
+}
+
+.offer p {
+  color: #5d5d5d;
+  margin: 0;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .flight-offers {
+    padding: 0.5rem;
+  }
+
+  .flight-offers .offer {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .offer h3, .offer p {
+    font-size: smaller; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+  }
+}

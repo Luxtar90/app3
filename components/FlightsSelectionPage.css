@@ -1,0 +1,27 @@
+/* FlightsSelectionPage.css */
+.flights-selection {
+  padding: 1rem;
+  background-color: #f2f9fe;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.flights-selection .flight-card {
+  margin-bottom: 1rem;
+  border: 1px solid #b6e0fe;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .flights-selection {
+    padding: 0.5rem;
+  }
+
+  .flights-selection .flight-card {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Agrega ajustes adicionales para otros tamaños de pantalla si es necesario */
